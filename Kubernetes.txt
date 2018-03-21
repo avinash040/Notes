@@ -1,0 +1,8 @@
+kubernetes
+
+Pod: 
+A pod is a kubernetes abstraction representing a group of one or more application containers(such as Docker)
+The containers in a Pod share ip address space and port space
+
+Node: 
+A physical or a virtual worker machine 
