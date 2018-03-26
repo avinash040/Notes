@@ -5,4 +5,20 @@ A pod is a kubernetes abstraction representing a group of one or more applicatio
 The containers in a Pod share ip address space and port space
 
 Node: 
-A physical or a virtual worker machine 
+A physical or a virtual worker machine. A pod always runs on a node  
+
+Kubelet: 
+A process reponsible for communication between kubernetes master and the node. It manages the pods and containsers on the machine.  
+
+
+Troubleshooting commands: 
+
+kubectl get - list resources
+kubectl describe - show detailed information about a resource
+kubectl logs - print the logs from a container in a pod
+kubectl exec - execute a command on a container in a pod
+
+Pods have lifecycle: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/
+
+Service: 
+Service routes traffic across a set of Pods. Services are the abstraction that allow pods to die and replicate in Kubernetes without impacting your application. 
